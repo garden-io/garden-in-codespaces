@@ -1,17 +1,15 @@
 {
-    "image": "docker.io/worldofgeese/garden-devcontainer-python:0.12.51-buster",
-    // Uncomment the following to build the image locally.
-    // "build": {
-    //     "dockerfile": "Dockerfile",
-    //     "target": "devcontainer",
-    //     "cacheFrom": "docker.io/worldofgeese/garden-devcontainer-python:0.12.51-buster"
-    // },
+    "build": {
+        "dockerfile": "Dockerfile",
+        "target": "devcontainer",
+        "cacheFrom": "docker.io/worldofgeese/garden-devcontainer-python:0.12.51-buster"
+    },
     "features": {
         // Add Docker-in-Docker support. A Debian base requires the proprietary Docker engine.
         "ghcr.io/devcontainers/features/docker-in-docker:2": {
             "moby": "false"
         },
-        // Add Kubernetes support with k3d and the kubectl, and helm CLI tools.
+        // Add Kubernetes support.
         "ghcr.io/rio/features/k3d:1": {},
         "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {},
         // Add Python support.
