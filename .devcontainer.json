@@ -1,8 +1,7 @@
 {
     "build": {
         "dockerfile": "Dockerfile",
-        "target": "devcontainer",
-        "cacheFrom": "docker.io/worldofgeese/garden-devcontainer-python:0.12.51-buster"
+        "target": "devcontainer"
     },
     "features": {
         // Add Docker-in-Docker support. A Debian base requires the proprietary Docker engine.
