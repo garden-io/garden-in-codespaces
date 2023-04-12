@@ -25,4 +25,4 @@ USER appuser
 # Run web server
 CMD [ "python", "-m", "main"]
 
-FROM gardendev/garden:0.12.51-buster as devcontainer
+FROM gardendev/garden:bonsai-edge-buster as devcontainer
